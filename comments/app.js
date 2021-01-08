@@ -1,17 +1,28 @@
 let ProfilePic = () => {
-    return <span>Make this component render an image</span>
+    return <div>  
+<img src="img/react cookbook.png" alt="Italian Trulli"></img>
+    </div>
 }
 
 let CommentBody = () => {
-    return <span>Make this component render a username in bold above the comment text</span>
-}
+    return <div class="userName">
+<h1> This Is A Bold UserName</h1>
 
+    </div>
+}
 let Comment = () => {
-    return <span>Make each comment render a profile picture and the comment body</span>
+    return <div>
+        <ProfilePic />
+        <CommentBody />
+    </div>
 }
 
 let Comments = () => {
-    return <span>Make this component render a list of comments</span>
+    return <div>
+      <Comment />
+      <Comment />
+      <Comment />
+    </div>
 }
 
 ReactDOM.render(<Comments />, document.getElementById('root'))
